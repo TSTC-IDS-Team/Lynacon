@@ -1,0 +1,75 @@
+/* src/index.css */
+
+/* Reset a bit */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Brand colors */
+:root {
+  --tstc-red: #E31C3D;
+  --tstc-gray: #4F4F4F;
+  --tstc-light-gray: #F5F5F5;
+}
+
+/* Body & container */
+body {
+  font-family: sans-serif;
+  background: var(--tstc-light-gray);
+  color: var(--tstc-gray);
+}
+.app-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 2rem;
+}
+
+/* Logo */
+.app-logo {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Headline */
+.app-title {
+  text-align: center;
+  color: var(--tstc-red);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Form elements */
+textarea, select, button {
+  width: 100%;
+  font-size: 1rem;
+}
+textarea, select {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+button {
+  background: var(--tstc-red);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Playback */
+.playback {
+  margin-top: 1.5rem;
+  text-align: center;
+}
