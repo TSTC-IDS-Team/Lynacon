@@ -2,7 +2,7 @@
 
 **Lynacon** is Texas State Technical College’s official text-to-speech (TTS) platform. Built with precision and powered by state-of-the-art speech synthesis models, Lynacon enables users to transform written content into lifelike spoken audio—all from a simple, intuitive web interface.
 
-> Inspired by Connally Hall. Built for TSTC. Delivered with clarity.
+> Inspired by John Conally. Built for TSTC. Delivered with clarity.
 
 ---
 
