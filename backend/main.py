@@ -17,6 +17,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+
 tts = TTS(model_name="tts_models/en/vctk/vits")
 @app.get("/")
 def read_root():
@@ -33,3 +35,13 @@ def synthesize(text: str = Form(...), speaker: str = Form("p225")):
 @app.get("/speakers")
 def list_speakers():
     return {"speakers": tts.speakers}
+    
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))  # fallback for local dev
+    import uvicorn
+    uvicorn.run(
+        "main:app",
+        host="0.0.0.0",
+        port=port,
+        reload=bool(os.environ.get("DEV", False)),
+    )   
