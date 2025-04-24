@@ -3,13 +3,21 @@ from fastapi import FastAPI, Form
 from fastapi.responses import FileResponse
 from TTS.api import TTS
 import uuid
+from fastapi.middleware.cors import CORSMiddleware
 
 # Fix espeak not being found
 os.environ["PATH"] += os.pathsep + r"C:\Program Files\eSpeak NG"
 
 app = FastAPI()
-tts = TTS(model_name="tts_models/en/vctk/vits")
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],        # or ["http://localhost:3000"] in dev
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+tts = TTS(model_name="tts_models/en/vctk/vits")
 @app.get("/")
 def read_root():
     return {"message": "Welcome to Lynacon, built by Travis Ashcraft and Casey Hicks."}
