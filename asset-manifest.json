@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/TSTC-IDS-Team/Lynacon/static/css/main.2cb5abf1.css",
+    "main.js": "/TSTC-IDS-Team/Lynacon/static/js/main.757d40bf.js",
+    "static/js/453.8ab44547.chunk.js": "/TSTC-IDS-Team/Lynacon/static/js/453.8ab44547.chunk.js",
+    "static/media/TSTCLogo-Primary2C.png": "/TSTC-IDS-Team/Lynacon/static/media/TSTCLogo-Primary2C.c9449e4e51746b737165.png",
+    "index.html": "/TSTC-IDS-Team/Lynacon/index.html",
+    "main.2cb5abf1.css.map": "/TSTC-IDS-Team/Lynacon/static/css/main.2cb5abf1.css.map",
+    "main.757d40bf.js.map": "/TSTC-IDS-Team/Lynacon/static/js/main.757d40bf.js.map",
+    "453.8ab44547.chunk.js.map": "/TSTC-IDS-Team/Lynacon/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cb5abf1.css",
+    "static/js/main.757d40bf.js"
+  ]
+}
