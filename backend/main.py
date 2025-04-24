@@ -38,6 +38,7 @@ def list_speakers():
     
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))  # fallback for local dev
+    print(f"▶️  Lynacon binding to 0.0.0.0:{port}")   # <— so you get a log
     import uvicorn
     uvicorn.run(
         "main:app",
