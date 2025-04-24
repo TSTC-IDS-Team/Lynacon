@@ -18,7 +18,8 @@ llvmlite==0.44.0
 mido==1.3.3
 msgpack==1.1.0
 numba==0.61.2
-numpy==2.2.5
+- numpy==2.2.5
++ numpy>=1.24.3,<2.0.0
 packaging==24.2
 platformdirs==4.3.7
 pooch==1.8.2
@@ -41,4 +42,6 @@ typing-inspection==0.4.0
 typing_extensions==4.13.2
 urllib3==2.4.0
 uvicorn==0.34.2
-git+https://github.com/coqui-ai/TTS.git@dev#egg=TTS
+
+# coqui TTS itself
+git+https://github.com/coqui-ai/TTS.git@dbf1a08a0d4e47fdad6172e433eeb34bc6b13b4e#egg=TTS
