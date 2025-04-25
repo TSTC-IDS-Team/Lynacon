@@ -3,7 +3,7 @@
   "homepage": "https://tstc-ids-team.github.io/Lynacon/",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8000",
+  "proxy": "https://1d3d-98-22-140-98.ngrok-free.app",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
